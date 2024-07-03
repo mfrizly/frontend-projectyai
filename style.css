@@ -82,7 +82,6 @@
   color: aqua;
 }
 
-/* New CSS class for fade in effect with scroll animation */
 .fadeInOnScroll {
   animation: fadeIn;
   animation-timeline: view();
@@ -111,5 +110,5 @@
 .text-edit::placeholder {
   font-size: 1.2rem;
   text-align: center;
-  text-shadow: 2px 3px 2px rgba(255, 62, 62, 0.5); /* changed color to black and modified shadow */
+  text-shadow: 2px 3px 2px rgba(255, 62, 62, 0.5); 
 }
