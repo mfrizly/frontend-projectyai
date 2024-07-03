@@ -1,0 +1,115 @@
+.dark:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.img-100-vh {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-30%);
+
+  .atas {
+    font-size: clamp(1rem, 4vw, 5rem);
+  }
+
+  .bawah {
+    font-size: clamp(1rem, 6vw, 6rem);
+    font-weight: bolder;
+  }
+
+  button {
+    padding-top: clamp(5px, 3vw, 20px);
+    padding-bottom: clamp(5px, 3vw, 20px);
+    padding-left: clamp(10px, 2vw, 45px);
+    padding-right: clamp(10px, 2vw, 45px);
+  }
+
+  .btn-outline-primary {
+    color: white;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: clamp(30rem, 15vh, 20rem);
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.card-design-index:hover {
+  transform: scale(1.01);
+  border-color: aqua;
+  background-color: bisque;
+  z-index: 3;
+}
+
+.card-design {
+  width: 100%;
+  height: clamp(800px, 12vh, 900px);
+
+  .card-body {
+    text-align: center;
+  }
+}
+
+.card-design:hover {
+  transform: scale(1.01);
+  border-color: aqua;
+  background-color: bisque;
+  z-index: 3;
+}
+
+.link-cepat {
+  text-decoration: none;
+  color: white;
+}
+
+.link-cepat:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+/* New CSS class for fade in effect with scroll animation */
+.fadeInOnScroll {
+  animation: fadeIn;
+  animation-timeline: view();
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.macan {
+  position: relative;
+  background-image: url("https://c.files.bbci.co.uk/8881/production/_95154943_acea979d-13a7-416a-b014-9bb52f0dd3c9.jpg");
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-edit::placeholder {
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow: 2px 3px 2px rgba(255, 62, 62, 0.5); /* changed color to black and modified shadow */
+}
